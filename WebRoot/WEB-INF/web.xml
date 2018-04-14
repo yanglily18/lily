@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <servlet>
+  <description>EmpServlet</description>
+  <display-name>EmpServlet</display-name>
+  <servlet-name>EmpServlet_login</servlet-name>
+  <servlet-class>myservlet.EmpServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>ModTrain</servlet-name>
+  <servlet-class>myservlet.ModTrain</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>addTrain</servlet-name>
+  <servlet-class>myservlet.AddTrain</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>EmpServlet_login</servlet-name>
+  <url-pattern>/EmpServlet_login</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ModTrain</servlet-name>
+  <url-pattern>/ModTrain</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>addTrain</servlet-name>
+  <url-pattern>/addTrain</url-pattern>
+ </servlet-mapping>
+ <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+</web-app>
